@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.urls import path, include
+from django.views.generic import View
 
 # Homepage route
-def home(request):
-    return render(request, 'base.html')
+class home(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'frontend/build/index.html')

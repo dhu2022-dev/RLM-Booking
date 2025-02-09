@@ -81,13 +81,6 @@ ticketmaster = TicketmasterAPIManager()
 #         logger.error(f"Error in search_events: {str(e)}", exc_info=True)
 #         return JsonResponse({"error": f"An error occurred: {str(e)}"}, status=500)
 
-# Homepage route
-def home(request):
-    return render(request, 'event_management/index.html')
-
-def calendar_view(request):
-    return render(request, 'event_management/calendar.html')
-
 @csrf_exempt
 def save_event(request):
     if request.method == 'POST':

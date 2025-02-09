@@ -8,3 +8,4 @@
 2025-01-19 03:37:19,834 - integrations.ticketmaster_api_manager - [ticketmaster_api_manager.py:169] - INFO - Fetching details for event with ID: None
 2025-01-19 03:37:19,834 - integrations.ticketmaster_api_manager - [ticketmaster_api_manager.py:169] - INFO - Fetching details for event with ID: None
 2025-01-19 03:37:19,834 - integrations.ticketmaster_api_manager - [ticketmaster_api_manager.py:169] - INFO - Fetching details for event with ID: None
+2025-02-08 14:51:35,975 - integrations.api_manager - [api_manager.py:45] - ERROR - Unsupported authentication type or missing credentials.

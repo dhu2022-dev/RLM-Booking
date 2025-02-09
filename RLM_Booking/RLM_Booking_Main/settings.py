@@ -75,7 +75,7 @@ ROOT_URLCONF = 'RLM_Booking_Main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'], # Path to shared template directory
+        'DIRS': [BASE_DIR], # Path to shared template directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,9 +89,11 @@ TEMPLATES = [
 ]
 
 # Static files configuration
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Path to shared static files
+    os.path.join(BASE_DIR, 'frontend/build/static'),  # Serve React static files
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 WSGI_APPLICATION = 'RLM_Booking_Main.wsgi.application'
 
